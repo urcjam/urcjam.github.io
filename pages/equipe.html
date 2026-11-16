@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Team - Météorama</title>
+        <!-- Modern fonts to match the Tauri/React application -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles.css">
+        <script defer src="../script.js"></script>
+    </head>
+<body>
+    <div class="background-effects">
+        <div class="rain"></div>
+        <div class="snow"></div>
+        <div class="floating-cloud" style="top: 15%; left: 5%;"></div>
+        <div class="floating-cloud" style="top: 35%; right: 10%; animation-delay: 3s;"></div>
+        <div class="floating-cloud" style="top: 65%; left: 15%; animation-delay: 5s;"></div>
+    </div>
+    
+    <div class="content-wrapper">
+        <!-- Enhanced header with navigation bar -->
+        <header>
+            <div class="header-content">
+                <div class="logo-title-container">
+                    <div class="logo-container">
+                        <img src="../icons/logo_meteorama.png" alt="Météorama" class="header-logo">
+                    </div>
+                    <div class="site-title-container">
+                        <a href="../index.html"><h1>Meteorama</h1></a>
+                    </div>
+                </div>
+                <nav class="nav-links" id="navLinks">
+                    <a href="../index.html">Home</a>
+                    <a href="equipe.html" class="active">Team</a>
+                    <a href="chronologie.html">Chronology</a>
+                </nav>
+                <div class="hamburger-menu" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <div class="mobile-nav" id="mobileNav">
+                <a href="../index.html">Home</a>
+                <a href="equipe.html" class="active">Team</a>
+                <a href="chronologie.html">Chronology</a>
+            </div>
+        </header>
+        
+        <main>
+            <!-- Team Hero Section -->
+            <section class="hero team-hero" id="team-hero">
+                <div class="hero-content">
+                    <h2 class="hero-title reveal">The Meteorama Team</h2>
+                    <p class="hero-subtitle reveal reveal-delay-1">
+                        We're a team of passionate computer science students combining Rust technology and meteorology 
+                        to create an application that enhances your daily weather experience.
+                    </p>
+                </div>
+            </section>
+
+        
+        
+            <section class="team-section section">
+                <h2 class="section-title reveal">Meet Our Team</h2>
+                <div class="team-container">
+                    <div class="team-member reveal reveal-delay-1" onclick="window.open('https://github.com/sahamone')">
+                        <div class="team-photo-container">
+                            <img src="../images/groupe/sacha.jpg" alt="Sacha VAUDEY" class="team-photo">
+                        </div>
+                        <div class="member-info">
+                            <h3>Sacha VAUDEY</h3>
+                            <p class="humor-subtitle">The request eater</p>
+                            <div class="member-description-box">
+                                <p>Passionate about computers and meteorology, I've always wanted to understand how weather forecasting models worked.</p>
+                            </div>
+                            <div class="member-links">
+                                <a href="https://github.com/sahamone" class="member-link" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-member reveal reveal-delay-2" onclick="window.open('https://github.com/aubinthome')">
+                        <div class="team-photo-container">
+                            <img src="../images/groupe/aubin.jpg" alt="Aubin THOME" class="team-photo">
+                        </div>
+                        <div class="member-info">
+                            <h3>Aubin THOME</h3>
+                            <p class="humor-subtitle">The biggest fan of React.js</p>
+                            <div class="member-description-box">
+                                <p>Passionate about home automation and weather, I deployed a home automation network with Jeedom. I was immediately interested in this weather forecasting project.</p>
+                            </div>
+                            <div class="member-links">
+                                <a href="https://github.com/aubinthome" class="member-link" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-member reveal reveal-delay-3" onclick="window.open('https://github.com/hugo-moro')">
+                        <div class="team-photo-container">
+                            <img src="../images/groupe/hugo.jpg" alt="Hugo MORO" class="team-photo">
+                        </div>
+                        <div class="member-info">
+                            <h3>Hugo MORO</h3>
+                            <p class="humor-subtitle">Give him data, he'll give you forecasts</p>
+                            <div class="member-description-box">
+                                <p>Passionate about technology and botany, I'm particularly interested in this climate forecasting project because of its practical usefulness.</p>
+                            </div>
+                            <div class="member-links">
+                                <a href="https://github.com/hugo-moro" class="member-link" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-member reveal reveal-delay-4" onclick="window.open('https://github.com/EskobaRoy')">
+                        <div class="team-photo-container">
+                            <img src="../images/groupe/roy.jpg" alt="Roy SABRA" class="team-photo">
+                        </div>
+                        <div class="member-info">
+                            <h3>Roy SABRA</h3>
+                            <p class="humor-subtitle">He does not tolerate delays</p>
+                            <div class="member-description-box">
+                                <p>I have a passion for technology and I'm curious to find out how weather systems work thanks to this project.</p>
+                            </div>
+                            <div class="member-links">
+                                <a href="https://github.com/EskobaRoy" class="member-link" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section values-section">
+                <h2 class="section-title reveal">Our Objectives</h2>
+                <div class="stack-container">
+                    <div class="stack-column reveal reveal-delay-1">
+                        <h3>Learn</h3>
+                        <p>Learn to work as part of a team and manage a project from conception to final delivery</p>
+                    </div>
+                    <div class="stack-column reveal reveal-delay-2">
+                        <h3>Discover</h3>
+                        <p>Discover all the facets of project realization, as well as all the technologies at our disposal to make it happen.</p>
+                    </div>
+                    <div class="stack-column reveal reveal-delay-3">
+                        <h3>Programming</h3>
+                        <p>Program with modern RUST tools and u Web technologies to deliver a fast, modern and intuitive application</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Météorama. All rights reserved.</p>
+        <div class="footer-authors">
+            <p>Created by: Moro Hugo, Sabra Roy, Thomé Aubin, Vaudey Sacha</p>
+        </div>
+    </footer>
+    <button id="sound-toggle" aria-label="Toggle sound">🔊</button>
+    <button id="weather-toggle" aria-label="Toggle weather">🌤️</button>
+</body>
+</html>
